@@ -9,7 +9,7 @@ import { SearchInput } from "./components/SearchInput/SearchInput";
 
 import styles from "./App.module.scss";
 
-const API_KEY = "AIzaSyB6cv2Pu-i4rnCivzv1NpdPnecZBxixyTU";
+const API_KEY = import.meta.env.VITE_TENOR_API_KEY;
 axios.defaults.baseURL = "https://tenor.googleapis.com/v2/";
 
 class App extends Component {
