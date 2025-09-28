@@ -1,0 +1,28 @@
+@use "../../sass/base/base.scss";
+
+.gif-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+	&__item {
+		border: 1px solid #cba6f7;
+        padding: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        &:hover {
+            background-color: #1f1626;
+            z-index: 1;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+	}
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+}
