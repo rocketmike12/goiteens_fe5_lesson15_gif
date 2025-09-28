@@ -6,7 +6,6 @@ import styles from "./GifList.module.scss";
 
 export class GifList extends Component {
 	render() {
-		console.log(this.props.gifs);
 		return (
 			<>
 				<ul className={styles["gif-list"]}>
